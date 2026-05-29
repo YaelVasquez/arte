@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería Artesanal</title>
+
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" type="text/css" href="css/styleAr.css">
+
+    <style>
+  .titulo {
+    font-weight: bold;
+    margin: 30px 0;
+    color: #5C4033;
+    letter-spacing: 2px;
+  }
+
+  /* CONTENEDOR DE GALERÍA */
+  .row.g-4 {
+    background: #FDF6EC;
+    padding: 20px;
+    border-radius: 15px;
+  }
+
+  /* IMÁGENES */
+  .gallery-img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: all 0.4s ease;
+    
+    /* efecto elegante */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+    filter: brightness(0.95);
+  }
+
+  /* EFECTO HOVER BONITO */
+  .gallery-img:hover {
+    transform: scale(1.08);
+    filter: brightness(1.05);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.25);
+  }
+
+  /* EFECTO TIPO TARJETA */
+  .col-6 {
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+  }
+
+  /* MODAL */
+  .modal-body img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 15px;
+  }
+
+  /* DESCRIPCIÓN */
+  #modalDesc {
+    color: #5C4033;
+    font-style: italic;
+  }
+
+  /* FOOTER MÁS SUAVE */
+  footer {
+    background-color: #8B5E3C;
+    padding: 10px;
+  }
+
+  footer p { 
+    text-align: center;
+    font-family: cursive;
+    font-size: 18px;
+    color: #FDF6EC;
+  }
+
+  .navbar-brand, .nav-link {
+    font-weight: 500;
+  }
+</style>
+</head>
+<body>
+
+  <table class="header-img" align="center" border="0">
+    <tr>
+      <th class="left-h" scope="col"><img src="imgAr/arteima.png" alt=""></th>
+      <th class="right-h" scope="col"><img src="imgAr/art.png" alt=""></th>
+    </tr>
+  </table>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="background-color: #f3e411;">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">Inicio</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="QuienesSom.html">Quienes somos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="GaleriaAr.html">Galeria</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Productos</a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="Alebrijes.html">Alebrijes</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="Barro.html">Barro negro</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="Vestimenta.html">Vestimenta</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="UbicacionAr.html">Ubicacion</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="ContactanosAr.html">Contactanos</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container py-5">
+    <div class="text-center mb-4">
+      <h1 class="titulo">Galería</h1>
+    </div>
+    <table class="table table-bordered">
+                <tr> 
+                  
+
+                <tr>
+                    <td colspan="2" align="center">
+        <h5>
+          Para presumir que visitaste Oaxaca, nada mejor que regresar con artesanías. 
+          El gran trabajo de los artesanos oaxaqueños se destaca en diferentes técnicas, 
+          desde cartonería con los famosos alebrijes y máscaras, pasando por coloridos textiles, 
+          cuadros con gráfica popular y hasta las piezas de barro negro y cerámica.
+            
+            </h5>
+                    </td>
+                </tr>
+            </table>
+
+    <div class="row g-4">
+     
+      <div class="col-6 col-md-4 col-lg-3">
+        <img src="imgAr/cot.jpg" alt="cu" class="gallery-img" data-bs-toggle="modal" data-bs-target="#modalImage"
+          data-img="imgAr/cot.jpg" data-desc="Tapetes oaxaqueños: tejidos a mano en telar de pedal, muy famosos por sus colores vivos y diseños zapotecas.">
+      </div>
+
+      <div class="col-6 col-md-4 col-lg-3">
+        <img src="imgAr/barne.jpeg" alt="jamora" class="gallery-img" data-bs-toggle="modal" data-bs-target="#modalImage"
+          data-img="imgAr/barne.jpeg" data-desc="San Bartolo Coyotepec es famoso por la elaboración de diversos productos de barro negro. Las piezas se hacen a mano por artesanos que utilizan técnicas tradicionales.">
+      </div>
+
+      <div class="col-6 col-md-4 col-lg-3">
+        <img src="imgAr/alebri.jpg" alt="kobi5" class="gallery-img" data-bs-toggle="modal" data-bs-target="#modalImage"
+          data-img="imgAr/alebri.jpg" data-desc="Coloridos alebrijes oaxaqueños en forma de animales fantásticos se exhiben en esta imagen. Cada figura está meticulosamente pintada a mano con detalles vibrantes, patrones geométricos y una amplia gama de colores brillantes como el rosa, verde, amarillo y morado. ">
+      </div>
+
+      <div class="col-6 col-md-4 col-lg-3">
+        <img src="imgAr/cala.jpg" alt="LeBron" class="gallery-img" data-bs-toggle="modal" data-bs-target="#modalImage"
+          data-img="imgAr/cala.jpg" data-desc="Una vibrante colección de calaveras pintadas a mano, símbolo del Día de Muertos en México, se exhibe en un entorno natural. Cada calavera presenta diseños intrincados en una variedad de colores llamativos, como negro, rojo, naranja y azul.">
+      </div>
+
+      <div class="col-6 col-md-4 col-lg-3">
+        <img src="imgAr/caar.jpg" alt="Kyrie" class="gallery-img" data-bs-toggle="modal" data-bs-target="#modalImage"
+          data-img="imgAr/caar.jpg" data-desc="Descubre nuestra colección de blusas bordadas, donde la elegancia se encuentra con la tradición.">
+      </div>
+
+      <div class="col-6 col-md-4 col-lg-3">
+        <img src="imgAr/barr.jpg" alt="LaMelo Ball" class="gallery-img" data-bs-toggle="modal" data-bs-target="#modalImage"
+          data-img="imgAr/barr.jpg" data-desc="Esta imagen captura la esencia de un taller tradicional de tintura textil, donde herramientas y materiales se agrupan armoniosamente sobre un suelo de piedra. En el centro, se destacan varios recipientes de barro que contienen plantas y tintes naturales, junto a una piedra de moler que muestra las huellas del uso.">
+      </div>
+
+      <div class="col-6 col-md-4 col-lg-3">
+        <img src="imgAr/bor.jpg" alt="jordan" class="gallery-img" data-bs-toggle="modal" data-bs-target="#modalImage"
+          data-img="imgAr/bor.jpg" data-desc="Explora la belleza de la artesanía local con esta vibrante colección de blusas y accesorios bordados. Cada prenda, adornada con intrincados patrones florales y geométricos, refleja la riqueza de la tradición textil. ">
+      </div>
+
+       <div class="col-6 col-md-4 col-lg-3">
+        <img src="imgAr/gua.jpg" alt="LaMelo Ball" class="gallery-img" data-bs-toggle="modal" data-bs-target="#modalImage"
+          data-img="imgAr/gua.jpg" data-desc="Descubre la belleza y el arte de la artesanía mexicana con esta vibrante colección de huaraches. Cada par, elaborado con cuero o tela tejida, presenta una explosión de colores y patrones únicos.">
+      </div>
+    </div>
+  </main>
+
+
+  <div class="modal fade" id="modalImage" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content border-0 shadow-lg">
+        <div class="modal-body text-center p-4">
+          <img id="modalImg" src="" alt="Tenis ampliado">
+          <p id="modalDesc" class="text-muted fs-5 mt-3"></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <br>
+  <footer style="background-color: #FFEBCD; padding: 5px;">
+    <br>
+    <p style="text-align: center; font-family: cursive; font-size: 20px; color: black;">
+      <i>CONTACTANOS EN NUESTRAS REDES SOCIALES:</i><br><br>
+
+      <a href="">
+        <img src="imgAr/facebook.png" width="35px" height="35px" title="Facebook">
+      </a>
+
+      <a href="">
+        <img src="imgAr/wa.png" width="35px" height="35px" title="Whatsapp">
+      </a>
+    </p>
+  </footer>
+
+
+  <script>
+    const modalImg = document.getElementById('modalImg');
+    const modalDesc = document.getElementById('modalDesc');
+    const images = document.querySelectorAll('.gallery-img');
+
+    images.forEach(img => {
+      img.addEventListener('click', () => {
+        modalImg.src = img.getAttribute('data-img');
+        modalDesc.textContent = img.getAttribute('data-desc');
+      });
+    });
+  </script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+

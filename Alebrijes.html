@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="css/styleAr.css">
+<title>Document</title>
+
+<style>
+.card-img-top {
+  height: 250px;
+  object-fit: cover;
+}
+
+#modalImg {
+  max-width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+</style>
+
+</head>
+
+<body>
+
+<!-- 🛒 BOTÓN CARRITO -->
+<div style="position: fixed; top: 20px; right: 20px; z-index: 1000;">
+  <button class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#cartModal">
+    🛒 (<span id="cart-count">0</span>)
+  </button>
+</div>
+
+<table class="header-img" align="center">
+<tr>
+<th class="left-h"><img src="imgAr/arteima.png"></th>
+<th class="right-h"><img src="imgAr/art.png"></th>
+</tr>
+</table>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="background-color: #f3e411;">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">Inicio</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="QuienesSom.html">Quienes somos</a>
+              </li>
+
+               <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="GaleriaAr.html">Galeria</a>
+              </li>
+          
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Productos
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="Alebrijes.html">Alebrijes</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="Barro.html">Barro negro</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="Vestimenta.html">Vestimenta</a></li>
+                  
+                  
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="UbicacionAr.html">Ubicacion </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="ContactanosAr.html">Contactanos </a>
+              </li>
+    
+    
+            
+          </div>
+        </div>
+      </nav>
+
+<main class="container py-5">
+<div class="text-center mb-4">
+<h1 class="titulo">Alebrijes</h1>
+</div>
+
+<div class="row g-4">
+
+<!-- PRODUCTO 1 -->
+<div class="col-6 col-md-4 col-lg-3">
+<div class="card h-100">
+<img src="imgAr/tortu.jpg" class="card-img-top">
+<div class="card-body text-center">
+<h5>CATALOGO ALEBRIJES BLAS</h5>
+<p>Tortuga de la protección</p>
+<p class="text-success fw-bold">$6000</p>
+
+<button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modalImage"
+data-img="imgAr/tortu.jpg" data-desc="Tortuga artesanal">Ver más</button>
+
+<button class="btn btn-success btn-sm add-to-cart"
+data-name="Tortuga de la protección" data-price="6000">
+Agregar al carrito
+</button>
+
+</div>
+</div>
+</div>
+
+<!-- PRODUCTO 2 -->
+<div class="col-6 col-md-4 col-lg-3">
+<div class="card h-100">
+<img src="imgAr/coyote.jpg" class="card-img-top">
+<div class="card-body text-center">
+<h5>CATALOGO ALEBRIJES BLAS</h5>
+<p>Coyote Zapoteca</p>
+<p class="text-success fw-bold">$1500</p>
+
+<button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modalImage"
+data-img="imgAr/coyote.jpg" data-desc="Coyote artesanal">Ver más</button>
+
+<button class="btn btn-success btn-sm add-to-cart"
+data-name="Coyote Zapoteca" data-price="1500">
+Agregar al carrito
+</button>
+
+</div>
+</div>
+</div>
+
+<!-- PRODUCTO 3 -->
+<div class="col-6 col-md-4 col-lg-3">
+<div class="card h-100">
+<img src="imgAr/camaleo.jpg" class="card-img-top">
+<div class="card-body text-center">
+<h5>CATALOGO ALEBRIJES BLAS</h5>
+<p>Camaleón Reptil-saurio</p>
+<p class="text-success fw-bold">$4500</p>
+
+<button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modalImage"
+data-img="imgAr/camaleo.jpg" data-desc="Camaleón artesanal">Ver más</button>
+
+<button class="btn btn-success btn-sm add-to-cart"
+data-name="Camaleón Reptil-saurio" data-price="4500">
+Agregar al carrito
+</button>
+
+</div>
+</div>
+</div>
+
+<!-- PRODUCTO 4 -->
+<div class="col-6 col-md-4 col-lg-3">
+<div class="card h-100">
+<img src="imgAr/armadi.jpg" class="card-img-top">
+<div class="card-body text-center">
+<h5>CATALOGO ALEBRIJES BLAS</h5>
+<p>Armadillo de San Pedro Cajonos Oaxaca</p>
+<p class="text-success fw-bold">$7000</p>
+
+<button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modalImage"
+data-img="imgAr/armadi.jpg" data-desc="Armadillo artesanal">Ver más</button>
+
+<button class="btn btn-success btn-sm add-to-cart"
+data-name="Armadillo de San Pedro Cajonos Oaxaca" data-price="7000">
+Agregar al carrito
+</button>
+
+</div>
+</div>
+</div>
+
+<!-- PRODUCTO 5 -->
+<div class="col-6 col-md-4 col-lg-3">
+<div class="card h-100">
+<img src="imgAr/rana.jpg" class="card-img-top">
+<div class="card-body text-center">
+<h5>CATALOGO ALEBRIJES BLAS</h5>
+<p>Rana mariposa</p>
+<p class="text-success fw-bold">$1900</p>
+
+<button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modalImage"
+data-img="imgAr/rana.jpg" data-desc="Rana artesanal">Ver más</button>
+
+<button class="btn btn-success btn-sm add-to-cart"
+data-name="Rana mariposa" data-price="1900">
+Agregar al carrito
+</button>
+
+</div>
+</div>
+</div>
+
+<!-- PRODUCTO 6 -->
+<div class="col-6 col-md-4 col-lg-3">
+<div class="card h-100">
+<img src="imgAr/caracol.jpg" class="card-img-top">
+<div class="card-body text-center">
+<h5>CATALOGO ALEBRIJES BLAS</h5>
+<p>Alebrije Caracol Snail 4</p>
+<p class="text-success fw-bold">$2500</p>
+
+<button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modalImage"
+data-img="imgAr/caracol.jpg" data-desc="Caracol artesanal">Ver más</button>
+
+<button class="btn btn-success btn-sm add-to-cart"
+data-name="Alebrije Caracol Snail 4" data-price="2500">
+Agregar al carrito
+</button>
+
+</div>
+</div>
+</div>
+
+<!-- PRODUCTO 7 -->
+<div class="col-6 col-md-4 col-lg-3">
+<div class="card h-100">
+<img src="imgAr/zorro.jpg" class="card-img-top">
+<div class="card-body text-center">
+<h5>CATALOGO ALEBRIJES BLAS</h5>
+<p>Alebrije Zorro Cazador 2</p>
+<p class="text-success fw-bold">$3500</p>
+
+<button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modalImage"
+data-img="imgAr/zorro.jpg" data-desc="Zorro artesanal">Ver más</button>
+
+<button class="btn btn-success btn-sm add-to-cart"
+data-name="Alebrije Zorro Cazador 2" data-price="3500">
+Agregar al carrito
+</button>
+
+</div>
+</div>
+</div>
+
+<!-- PRODUCTO 8 -->
+<div class="col-6 col-md-4 col-lg-3">
+<div class="card h-100">
+<img src="imgAr/borrego.jpg" class="card-img-top">
+<div class="card-body text-center">
+<h5>CATALOGO ALEBRIJES BLAS</h5>
+<p>Borrego Cimarron</p>
+<p class="text-success fw-bold">$6000</p>
+
+<button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modalImage"
+data-img="imgAr/borrego.jpg" data-desc="Borrego artesanal">Ver más</button>
+
+<button class="btn btn-success btn-sm add-to-cart"
+data-name="Borrego Cimarron" data-price="6000">
+Agregar al carrito
+</button>
+
+</div>
+</div>
+</div>
+
+</div>
+</main>
+
+<!-- MODAL PRODUCTO -->
+<div class="modal fade" id="modalImage">
+<div class="modal-dialog modal-lg">
+<div class="modal-content">
+<div class="modal-body text-center">
+<img id="modalImg">
+<p id="modalDesc"></p>
+</div>
+</div>
+</div>
+</div>
+
+<!-- 🛒 MODAL CARRITO -->
+<div class="modal fade" id="cartModal">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header">
+<h5>Carrito de compras</h5>
+<button class="btn-close" data-bs-dismiss="modal"></button>
+</div>
+<div class="modal-body">
+<ul id="cart-items" class="list-group"></ul>
+<hr>
+<h5>Total: $<span id="cart-total">0</span> MXN</h5>
+</div>
+</div>
+</div>
+</div>
+
+<script>
+const modalImg = document.getElementById("modalImg");
+const modalDesc = document.getElementById("modalDesc");
+
+document.querySelectorAll(".btn-primary").forEach(btn => {
+btn.addEventListener("click", function () {
+modalImg.src = this.getAttribute("data-img");
+modalDesc.textContent = this.getAttribute("data-desc");
+});
+});
+
+let cart = [];
+
+const cartCount = document.getElementById("cart-count");
+const cartItems = document.getElementById("cart-items");
+const cartTotal = document.getElementById("cart-total");
+
+document.querySelectorAll(".add-to-cart").forEach(button => {
+button.addEventListener("click", () => {
+const name = button.getAttribute("data-name");
+const price = parseFloat(button.getAttribute("data-price"));
+
+cart.push({ name, price });
+updateCart();
+});
+});
+
+function updateCart() {
+cartItems.innerHTML = "";
+let total = 0;
+
+cart.forEach(item => {
+total += item.price;
+
+const li = document.createElement("li");
+li.className = "list-group-item d-flex justify-content-between";
+
+li.innerHTML = `${item.name} <span>$${item.price}</span>`;
+cartItems.appendChild(li);
+});
+
+cartCount.textContent = cart.length;
+cartTotal.textContent = total;
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,126 @@
+tr, tbody {
+    width: 100%; 
+}
+
+.left-h {
+    width: 15%;
+}
+
+.left-h img {
+    width: 100%;
+    height: auto;
+    text-align: right;
+    object-fit: cover;
+}
+
+.right-h {
+    width: 75%;
+}
+
+.right-h img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    text-align: left;
+}
+
+body {
+    background-color: #F5E6D3; /* Beige artesanal */
+    color: #4B2E2B; /* Café oscuro */
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    background-color: #8B5E3C; /* Café medio */
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: #FDF6EC; /* Crema claro */
+}
+
+.table thead {
+    background-color: #A47148; 
+    color: #FDF6EC;
+}
+
+.table tbody tr:nth-child(odd) {
+    background-color: #F5E6D3; 
+}
+
+.table tbody tr:nth-child(even) {
+    background-color: #EFE0CC; 
+}
+
+.container {
+    background-color: #FDF6EC; 
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(10, 0, 0, 0.1);
+}
+
+form {
+    background-color: #E6CCB2; /* Arena suave */
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 600px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+input[type="text"],
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #C2A385;
+    border-radius: 3px;
+    box-sizing: border-box;
+}
+
+input[type="button"] {
+    background-color: #8B5E3C; 
+    color: #FDF6EC; 
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+input[type="button"]:hover {
+    background-color: #6F4E37; 
+}
+
+.tortilla-card {
+    background-color: #FDF6EC; 
+    border-radius: 1rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    padding: 2rem;
+}
+
+.tortilla-title {
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #5C4033; 
+    margin-bottom: 1rem;
+}
+
+.tortilla-img {
+    max-width: 200px;
+    height: auto;
+    border-radius: 0.5rem;
+}
+
+.tortilla-desc {
+    font-size: 1.1rem;
+    color: #3E2723;
+    margin-bottom: 1rem;
+}
+
+.tortilla-price {
+    font-size: 1.2rem;
+}
+
+.price-amount {
+    color: #8B4513; 
+    font-weight: bold;
+}
